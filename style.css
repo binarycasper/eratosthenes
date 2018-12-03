@@ -88,3 +88,32 @@ footer {
     font-size: small; 
 }
 
+#gridSection {
+    flex-grow: 1; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    overflow-x: auto; 
+    background: url("");  
+    background-attachment: local; 
+   }  
+
+#gridContainer {
+    font-size: 20px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    background-color: black; 
+    padding: 5px; 
+    text-align: center;
+    }
+
+#prime {
+    background-color: gold; 
+     
+}
+
+#notprime {
+    background-color: rgba(255, 255, 255);
+     
+}
