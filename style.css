@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
-
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
@@ -12,19 +12,43 @@ input[type=number] {
     }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+    width: 100%;
     margin: 0;
+    padding: 0; 
+    font-family: 'Source Sans Pro', sans-serif;
     }
 
-main {
+.layout {
+    display: flex;
+    }
+
+.vertical {
+    flex-direction: column;
+    }
+
+.horizontal {
+    flex-direction: row;
+    }
+
+.flex {
+    flex: 1;
+    }
+
+.center {
+    align-items: center;
+    }
+
+.justify {
+    justify-content: center;
+    }
+
+#site {
   overflow: hidden;
-  display: flex;
   height: 100vh;
     }
 
-aside {
-    display: flex;
-    flex-direction: column;
+#menuSection {
     width: 25%;
     min-width: 20em;
     overflow-y: auto;
@@ -57,7 +81,6 @@ a {
   display: flex; 
   flex-wrap: wrap; 
   justify-content: space-around;
-  align-items: center; 
   margin: 0; 
   padding: 20px;
   text-align: center;
@@ -79,27 +102,21 @@ a {
     cursor: pointer; 
     }
 
-footer {
+#footer {
     margin-top: 50px;
-    align-items: center; 
-    justify-content: center; 
     overflow-x: auto; 
     text-align: center; 
     font-size: small; 
     }
 
-#gridSection {
-    flex-grow: 1; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
+#gridSection {  
     overflow-x: auto; 
     background: url("");  
     background-attachment: local; 
    }  
 
 #gridContainer {
-    font-size: 20px;
+    font-size: 25px;
     display: grid;
     grid-gap: 5px;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
@@ -116,5 +133,9 @@ footer {
 
 #notprime {
     background-color: rgba(255, 255, 255);
+    }
+
+.numberContainer {
+    padding: 10px;
     }
 

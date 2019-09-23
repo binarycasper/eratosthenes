@@ -26,9 +26,9 @@ function calculate()
     for (var i = 0; i < numbers.length; i++)
     {
         if (numbers[i] != 0)
-        output = output + '<div id="prime">' + (i + 2) + '</div>'; 
+        output = output + '<div id="prime" class="numberContainer">' + (i + 2) + '</div>'; 
         else  
-        output = output + '<div id="notprime">' + (i + 2) + '</div>';
+        output = output + '<div id="notprime" class="numberContainer">' + (i + 2) + '</div>';
     }
 
     document.getElementById("gridContainer").innerHTML = output; 
