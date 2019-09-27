@@ -127,15 +127,8 @@ a {
     height: 90%; 
     }
 
-#prime {
-    background-color: gold; 
-    }
-
-#notprime {
-    background-color: rgba(255, 255, 255);
-    }
-
 .numberContainer {
     padding: 10px;
+    background-color: rgba(255, 255, 255);
     }
 
